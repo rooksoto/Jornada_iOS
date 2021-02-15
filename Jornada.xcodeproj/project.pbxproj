@@ -3,24 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		ED1EFADA25D8BDA50082E8D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1EFAD925D8BDA50082E8D9 /* AppDelegate.swift */; };
 		ED1EFADC25D8BDA50082E8D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1EFADB25D8BDA50082E8D9 /* SceneDelegate.swift */; };
-		ED1EFADE25D8BDA50082E8D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1EFADD25D8BDA50082E8D9 /* ViewController.swift */; };
 		ED1EFAE125D8BDA50082E8D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1EFADF25D8BDA50082E8D9 /* Main.storyboard */; };
 		ED1EFAE425D8BDA50082E8D9 /* Jornada.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED1EFAE225D8BDA50082E8D9 /* Jornada.xcdatamodeld */; };
 		ED1EFAE625D8BDA60082E8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1EFAE525D8BDA60082E8D9 /* Assets.xcassets */; };
 		ED1EFAE925D8BDA60082E8D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1EFAE725D8BDA60082E8D9 /* LaunchScreen.storyboard */; };
+		EDABD16A25DAF723004F4A2F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EDABD16925DAF723004F4A2F /* RxSwift */; };
+		EDABD16E25DAF723004F4A2F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EDABD16D25DAF723004F4A2F /* RxRelay */; };
+		EDABD17025DAF723004F4A2F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EDABD16F25DAF723004F4A2F /* RxCocoa */; };
+		EDABD17225DAF723004F4A2F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = EDABD17125DAF723004F4A2F /* RxBlocking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED1EFAD625D8BDA50082E8D9 /* Jornada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jornada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1EFAD925D8BDA50082E8D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED1EFADB25D8BDA50082E8D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED1EFADD25D8BDA50082E8D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED1EFAE025D8BDA50082E8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED1EFAE325D8BDA50082E8D9 /* Jornada.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jornada.xcdatamodel; sourceTree = "<group>"; };
 		ED1EFAE525D8BDA60082E8D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDABD16E25DAF723004F4A2F /* RxRelay in Frameworks */,
+				EDABD17025DAF723004F4A2F /* RxCocoa in Frameworks */,
+				EDABD16A25DAF723004F4A2F /* RxSwift in Frameworks */,
+				EDABD17225DAF723004F4A2F /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +64,11 @@
 		ED1EFAD825D8BDA50082E8D9 /* Jornada */ = {
 			isa = PBXGroup;
 			children = (
-				ED1EFAD925D8BDA50082E8D9 /* AppDelegate.swift */,
-				ED1EFADB25D8BDA50082E8D9 /* SceneDelegate.swift */,
-				ED1EFADD25D8BDA50082E8D9 /* ViewController.swift */,
+				EDABD16425DAF5F6004F4A2F /* Common */,
+				EDABD16025DAF5B3004F4A2F /* Login */,
+				EDABD15C25DAF440004F4A2F /* Edit Entry */,
+				ED1EFAF625D8BE3E0082E8D9 /* Entry List */,
+				ED1EFAF425D8BDEF0082E8D9 /* Support Files */,
 				ED1EFADF25D8BDA50082E8D9 /* Main.storyboard */,
 				ED1EFAE525D8BDA60082E8D9 /* Assets.xcassets */,
 				ED1EFAE725D8BDA60082E8D9 /* LaunchScreen.storyboard */,
@@ -68,6 +76,131 @@
 				ED1EFAE225D8BDA50082E8D9 /* Jornada.xcdatamodeld */,
 			);
 			path = Jornada;
+			sourceTree = "<group>";
+		};
+		ED1EFAF125D8BDC00082E8D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED1EFAF225D8BDCC0082E8D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED1EFAF325D8BDD30082E8D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED1EFAF425D8BDEF0082E8D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED1EFAD925D8BDA50082E8D9 /* AppDelegate.swift */,
+				ED1EFADB25D8BDA50082E8D9 /* SceneDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		ED1EFAF625D8BE3E0082E8D9 /* Entry List */ = {
+			isa = PBXGroup;
+			children = (
+				ED1EFAF225D8BDCC0082E8D9 /* Model */,
+				ED1EFAF125D8BDC00082E8D9 /* View */,
+				ED1EFAF325D8BDD30082E8D9 /* ViewModel */,
+			);
+			path = "Entry List";
+			sourceTree = "<group>";
+		};
+		EDABD15C25DAF440004F4A2F /* Edit Entry */ = {
+			isa = PBXGroup;
+			children = (
+				EDABD15F25DAF481004F4A2F /* Model */,
+				EDABD15E25DAF474004F4A2F /* View */,
+				EDABD15D25DAF46A004F4A2F /* ViewModel */,
+			);
+			path = "Edit Entry";
+			sourceTree = "<group>";
+		};
+		EDABD15D25DAF46A004F4A2F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDABD15E25DAF474004F4A2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDABD15F25DAF481004F4A2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDABD16025DAF5B3004F4A2F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EDABD16325DAF5D1004F4A2F /* Model */,
+				EDABD16225DAF5CC004F4A2F /* View */,
+				EDABD16125DAF5C3004F4A2F /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EDABD16125DAF5C3004F4A2F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDABD16225DAF5CC004F4A2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDABD16325DAF5D1004F4A2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDABD16425DAF5F6004F4A2F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EDABD16725DAF608004F4A2F /* Models */,
+				EDABD16625DAF603004F4A2F /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EDABD16625DAF603004F4A2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDABD16725DAF608004F4A2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +219,12 @@
 			dependencies = (
 			);
 			name = Jornada;
+			packageProductDependencies = (
+				EDABD16925DAF723004F4A2F /* RxSwift */,
+				EDABD16D25DAF723004F4A2F /* RxRelay */,
+				EDABD16F25DAF723004F4A2F /* RxCocoa */,
+				EDABD17125DAF723004F4A2F /* RxBlocking */,
+			);
 			productName = Jornada;
 			productReference = ED1EFAD625D8BDA50082E8D9 /* Jornada.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +252,9 @@
 				Base,
 			);
 			mainGroup = ED1EFACD25D8BDA50082E8D9;
+			packageReferences = (
+				EDABD16825DAF723004F4A2F /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = ED1EFAD725D8BDA50082E8D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED1EFADE25D8BDA50082E8D9 /* ViewController.swift in Sources */,
 				ED1EFADA25D8BDA50082E8D9 /* AppDelegate.swift in Sources */,
 				ED1EFADC25D8BDA50082E8D9 /* SceneDelegate.swift in Sources */,
 				ED1EFAE425D8BDA50082E8D9 /* Jornada.xcdatamodeld in Sources */,
@@ -345,6 +486,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDABD16825DAF723004F4A2F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDABD16925DAF723004F4A2F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDABD16825DAF723004F4A2F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		EDABD16D25DAF723004F4A2F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDABD16825DAF723004F4A2F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		EDABD16F25DAF723004F4A2F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDABD16825DAF723004F4A2F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EDABD17125DAF723004F4A2F /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDABD16825DAF723004F4A2F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ED1EFAE225D8BDA50082E8D9 /* Jornada.xcdatamodeld */ = {
